@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoShare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id="content" style="display:none;">
+            <img src="image.png">
+            <p id="user-info"></p>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2>Az oldal használati feltételei</h2>
+                <p>Kérjük, fogaddja el az oldal használati feltételeit, hogy hozzáférjen a tartalomhoz. Az oldal csak feketehumor céljából készült és egyesek számára felkavaró lehet. Az oldal nem tárolja a felhasználók adatait.</p>
+                <button id="acceptBtn" onclick="goFullscreen()">Elfogadás</button>
+            </div>
+        </div>
+    
+        <audio id="audioPlayer" preload="auto" style="display:none;">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+
+        <script src="script.js"></script>
+</body>
+</html>
